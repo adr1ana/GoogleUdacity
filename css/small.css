@@ -1,0 +1,44 @@
+/* Hamburger navigation */
+.navigation a:not(:first-child) {
+  display: none;
+}
+.navigation a.icon {
+  float: right;
+  display: block;
+  border: none;
+}
+.navigation.responsive {
+  position: relative;
+}
+.navigation.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+}
+.navigation.responsive a {
+  float: none;
+  display: block;
+  text-align: center;
+  border: none;
+}
+.navigation.responsive a:hover {
+  border: none;
+}
+.navigation a:first-child{
+  font-size: 25px;
+}
+/* Changing positions of divs and visual*/
+.container-left {
+  flex-basis: 100%;
+}
+.info {
+  flex-basis: 100%;
+}
+.card {
+  width: 350px;
+  height: 250px;
+}
+.hr-contact {
+  width: 100%;
+}
