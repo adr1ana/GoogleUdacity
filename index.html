@@ -1,44 +1,207 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My projects</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="logo-wordmark">
-      <h1>
-        <img class="logo-wordmark--img" alt="Udacity Europe" src="https://eu.udacity.com/assets/iridium/images/core/header/udacity-wordmark-light.svg"> | <img src="https://www.thetechconnectioninc.com/images/comp-logos/GOOGLE-WHITE.483d72d4.png"width='7%'/>
-      </h1>
+  <meta charset="utf-8">
+  <title>ASafran | Portfolio</title>
+  <link rel="icon" type="image/png" href="img/logo.png"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" type="text/css">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="screen and (max-width:600px)" href="css/small.css">
+  <link rel="stylesheet" media="screen and (min-width:601px) and (max-width:1150px)" href="css/medium.css">
+  <link rel="stylesheet" media="screen and (max-width:850px)" href="css/edit.css">
+</head>
+<body>
+  <div onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i>
+  </div>
+  <header>
+    <div class="navigation" id="mynavigation">
+      <a href="#">POЯTFOLIO</a>
+      <a href="#my-info">ABOUT</a>
+      <a href="#my-projects">MY PROJECTS</a>
+      <a href="#social">CONTACT</a>
+      <a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-    <br><br><br>
-    <div class="card transition">
-      <h2 class="blue transition">Project: Mockup to Article </h2>
-      <p>Put your HTML skills to use by covering a designer's mockup of a blog article into a real webpage!</p>
-      <div class="cta-container transition"><a href="mockup/P1.html" class="cta">See my project</a>
-      </div>
-      <div class="card_circle transition">
-      </div>
+  </header>
+  <div class="container-main">
+    <div class="container-left">
+      <span class="container-left-content">
+        <p class="my-name">Adriana &#352;afran</p>
+        <hr class="hr-content">
+        <p class="course">&lt; FEND /&gt;</p>
+      </span>
     </div>
-    <br>
-    <div class="card2 transition">
-      <h2 class="green transition">Project: Animal Trading Cards </h2>
+    <div class="info" id="my-info">
+      <img class="white-logo" src="img/mylogo_white.svg" alt="mylogo">
+      <h2 class="name">About me</h2>
+      <hr class="info-line">
+      <p class="about-me">Hi! I am an student @faculty of science in Croatia.<br>
+      Except studying physics and informatics I have big desire to become an Front-end
+      web dev.</p>
+      <p class="about-me">In Nov 2017 I got opportunity and started Google-Udacity Scholarship Challenge. Here bellow you can see some of my projects made with HTML5, CSS3, JavaScript and
+        jQuery.
+      </p>
+      <hr class="info-line">
+      <img src="https://eu.udacity.com/assets/iridium/images/core/header/udacity-wordmark-light.svg" alt="udacity-logo" class="udacity">
+    </div>
+    <div class="my-projects" id="my-projects">
+      <div class="card" id="card-0">
+        <div class="p-number">
+          <p class="p-text">P1</p>
+        </div>
+        <h3 class="card-title">Animal Trading Cards</h3>
+        <div class="description">First project is showing knowlege of HTML and CSS to create a web-based trading card depicting my favorite animal.
+        </div>
+        <hr>
+        <div class="date">
+          Feb 2018
+        </div>
+        <div class="buttons">
+          <button class="preview-btn"><a href="card/P2.html" class="preview">Preview</a></button>
+          <button class="github-btn"><a href="https://github.com/adr1ana/GoogleUdacity/tree/gh-pages/card" class="cta2">GitHub</a></button>
+        </div>
+      </div>
+      <div class="card" id="card-2">
+        <div class="p-number">
+          <p class="p-text">P2</p>
+        </div>
+        <h3 class="card-title">Build A Portfolio Site</h3>
+        <div class="description">Second project is showing an example of responsive portfolio with images, descriptions and links of given mockup.
+        </div>
+        <hr>
+        <div class="date">
+          Mar 2018
+        </div>
+        <div class="buttons">
+          <button class="preview-btn"><a href="https://adr1ana.github.io/GoogleUdacity/" class="preview">Preview</a></button>
+          <button class="github-btn"><a href="https://github.com/adr1ana/GoogleUdacity/tree/gh-pages" class="git-hub">GitHub</a></button>
+        </div>
+      </div>
+      <div class="card" id="card-3">
+        <div class="p-number">
+          <p class="p-text">P3</p>
+        </div>
+        <h3 class="card-title">Memory Game</h3>
+        <div class="description">Third project shows my own version of the classic memory game "Concentration", using JavaScript, DOM selectors and Event Listeners.
+        </div>
+        <hr>
+        <div class="date">
+          Apr 2018
+        </div>
+        <div class="buttons">
+          <button class="preview-btn">Preview</button>
+          <button class="github-btn">GitHub</button>
+        </div>
+      </div>
       <br>
-      <p>Use your knowlege of HTML and CSS to create a web-based trading card depicting your favorite animal. </p>
-      <div class="cta-container transition"><a href="card/P2.html" class="cta2">See my project</a>
+      <div class="card" id="card-1">
+        <div class="p-number">
+          <p class="p-text">P4</p>
+        </div>
+        <h3 class="card-title">Classic Arcade Game Clone</h3>
+        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+        <hr>
+        <div class="date">
+          May 2018
+        </div>
+        <div class="buttons">
+          <button class="preview-btn">Preview</button>
+          <button class="github-btn">GitHub</button>
+        </div>
       </div>
-      <div class="card_circle2 transition">
+      <div class="card" id="card-1">
+        <div class="p-number">
+          <p class="p-text">P5</p>
+        </div>
+        <h3 class="card-title">Feed Reader Testing</h3>
+        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+        <hr>
+        <div class="date">
+          May 2018
+        </div>
+        <div class="buttons">
+          <button class="preview-btn">Preview</button>
+          <button class="github-btn">GitHub</button>
+        </div>
+      </div>
+      <div class="card" id="card-1">
+        <div class="p-number">
+          <p class="p-text">P6</p>
+        </div>
+        <h3 class="card-title">Restaurant Reviews</h3>
+        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+        <hr>
+        <div class="date">
+          July 2018
+        </div>
+        <div class="buttons">
+          <button class="preview-btn">Preview</button>
+          <button class="github-btn">GitHub</button>
+        </div>
+      </div>
+      <br>
+      <div class="card" id="card-1">
+        <div class="p-number">
+          <p class="p-text">P7</p>
+        </div>
+        <h3 class="card-title">MyReads: A Book Tracking App</h3>
+        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+        <hr>
+        <div class="date">
+          July 2018
+        </div>
+        <div class="buttons">
+          <button class="preview-btn">Preview</button>
+          <button class="github-btn">GitHub</button>
+        </div>
+      </div>
+      <div class="card" id="card-1">
+        <div class="p-number">
+          <p class="p-text">P8</p>
+        </div>
+        <h3 class="card-title">Neighborhood Map</h3>
+        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+        <hr>
+        <div class="date">
+          Aug 2018
+        </div>
+        <div class="buttons">
+          <button class="preview-btn">Preview</button>
+          <button class="github-btn">GitHub</button>
+        </div>
       </div>
     </div>
-    <br>
-    <br>
-    <div class="card3 transition">
-      <h2 class="purple transition">Project: Pixel Art Maker </h2>
-      <p> Create a single-page app in JavaScript where the user can create artistic designs! </p>
-      <div class="cta-container transition"><a href="pixel/P3.html" class="cta3">See my project</a>
+    <div class="container-bottom">
+      <!-- contacts -->
+      <div class="contact" id="social">
+        <div class="contact-links">
+          <p> You can find me here: </p>
+          <hr class="hr-contact">
+          <a href="https://plus.google.com/u/0/112893864127905026403"><img src="img/icon-google-o.svg" class="icon google-plus" alt="Google Plus Icon"></a>
+          <a href="https://stackoverflow.com/users/6788183/adriana-%C5%A0afran"><img src="img/icon-stack-o.svg" class="icon stackoverflow" alt="Stackoverflow Icon"></a>
+          <a href="https://www.linkedin.com/in/adriana-%C5%A1afran-312510150/"><img src="img/icon-linkedin-o.svg" class="icon linkedin" alt="Linkedin Icon"></a>
+          <a href="https://www.facebook.com/adriana46"><img src="img/icon-fb-o.svg" alt="Facebook Icon" class="icon facebook"></a>
+          <a href="https://www.instagram.com/adr1ana46/"><img src="img/icon-instagram-o.svg" class="icon instagram" alt="Instagram Icon"></a>
+          <a href="https://github.com/adr1ana/"><img src="img/icon-git-o.svg" class="icon github" alt="GitHub Icon"></a>
+          <hr class="hr-contact">
+          <p>Or send me an e-mail: <a href="mailto:adriana.safran@gmail.com">Send Mail</a>
+          </p>
+        </div>
+        <div class="contact-img">
+          <img src="img/web-drawing.svg"width="500">
+        </div>
       </div>
-      <div class="card_circle3 transition">
-      </div>
+      <footer>
+        <p>Created for UDACITY 2018 <em>by Adriana</em></p>
+      </footer>
     </div>
-    <br><br>
-  </body>
+  </div>
+  <script src="js/main.js"></script>
+</body>
 </html>
