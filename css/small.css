@@ -25,10 +25,13 @@
 .navigation.responsive a:hover {
   border: none;
 }
-.navigation a:first-child{
+.navigation a:first-child {
   font-size: 25px;
 }
-/* Changing positions of divs and visual*/
+.navigation a.icon:hover {
+  border-bottom: none;
+}
+/* Changing positions of divs and visual edits*/
 .container-left {
   flex-basis: 100%;
 }
@@ -38,6 +41,24 @@
 .card {
   width: 350px;
   height: 250px;
+}
+#card-0 {
+  background: url(../img/P1.png) no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+#card-2 {
+  background: url(../img/P2.png) no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+#card-3 {
+  background: url(../img/P3.png) no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+.description {
+  padding: 0 15px;
 }
 .hr-contact {
   width: 100%;
