@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>ASafran | Portfolio</title>
@@ -13,8 +13,10 @@
   <link rel="stylesheet" media="screen and (max-width:850px)" href="css/edit.css">
 </head>
 <body>
+  <!-- Scroll up to the top of the page button -->
   <div onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i>
   </div>
+  <!-- Top navigation which becomes hamburger on smaller screen and mobile -->
   <header>
     <div class="navigation" id="mynavigation">
       <a href="#">POЯTFOLIO</a>
@@ -24,13 +26,14 @@
       <a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
   </header>
+  <!-- Top content -->
   <div class="container-main">
     <div class="container-left">
-      <span class="container-left-content">
+      <div class="container-left-content">
         <p class="my-name">Adriana &#352;afran</p>
         <hr class="hr-content">
         <p class="course">&lt; FEND /&gt;</p>
-      </span>
+      </div>
     </div>
     <div class="info" id="my-info">
       <img class="white-logo" src="img/mylogo_white.svg" alt="mylogo">
@@ -39,14 +42,14 @@
       <p class="about-me">Hi! I am an student @faculty of science in Croatia.<br>
       Except studying physics and informatics I have big desire to become an Front-end
       web dev.</p>
-      <p class="about-me">In Nov 2017 I got opportunity and started Google-Udacity Scholarship Challenge. Here bellow you can see some of my projects made with HTML5, CSS3, JavaScript and
-        jQuery.
+      <p class="about-me">In Nov 2017 I got opportunity and started Google-Udacity Scholarship Challenge. Here bellow you can see some of my projects made with HTML5, CSS3, JavaScript and jQuery.
       </p>
       <hr class="info-line">
       <img src="https://eu.udacity.com/assets/iridium/images/core/header/udacity-wordmark-light.svg" alt="udacity-logo" class="udacity">
     </div>
+    <!-- Middle content - my projects shown on cards -->
     <div class="my-projects" id="my-projects">
-      <div class="card" id="card-0">
+      <div class="card" id="card-1">
         <div class="p-number">
           <p class="p-text">P1</p>
         </div>
@@ -58,8 +61,8 @@
           Feb 2018
         </div>
         <div class="buttons">
-          <button class="preview-btn"><a href="card/P2.html" class="preview">Preview</a></button>
-          <button class="github-btn"><a href="https://github.com/adr1ana/GoogleUdacity/tree/gh-pages/card" class="cta2">GitHub</a></button>
+          <button class="preview-btn" onclick="location.href='card/P2.html';">Preview</button>
+          <button class="github-btn" onclick="location.href='https://github.com/adr1ana/GoogleUdacity/tree/gh-pages/card';">GitHub</button>
         </div>
       </div>
       <div class="card" id="card-2">
@@ -74,8 +77,8 @@
           Mar 2018
         </div>
         <div class="buttons">
-          <button class="preview-btn"><a href="https://adr1ana.github.io/GoogleUdacity/" class="preview">Preview</a></button>
-          <button class="github-btn"><a href="https://github.com/adr1ana/GoogleUdacity/tree/gh-pages" class="git-hub">GitHub</a></button>
+          <button class="preview-btn" onclick="location.href='https://adr1ana.github.io/GoogleUdacity/';">Preview</button>
+          <button class="github-btn" onclick="location.href='https://github.com/adr1ana/GoogleUdacity/tree/gh-pages';">GitHub</button>
         </div>
       </div>
       <div class="card" id="card-3">
@@ -95,7 +98,7 @@
         </div>
       </div>
       <br>
-      <div class="card" id="card-1">
+      <div class="card" id="card-4">
         <div class="p-number">
           <p class="p-text">P4</p>
         </div>
@@ -111,7 +114,7 @@
           <button class="github-btn">GitHub</button>
         </div>
       </div>
-      <div class="card" id="card-1">
+      <div class="card" id="card-5">
         <div class="p-number">
           <p class="p-text">P5</p>
         </div>
@@ -127,7 +130,7 @@
           <button class="github-btn">GitHub</button>
         </div>
       </div>
-      <div class="card" id="card-1">
+      <div class="card" id="card-6">
         <div class="p-number">
           <p class="p-text">P6</p>
         </div>
@@ -144,7 +147,7 @@
         </div>
       </div>
       <br>
-      <div class="card" id="card-1">
+      <div class="card" id="card-7">
         <div class="p-number">
           <p class="p-text">P7</p>
         </div>
@@ -160,7 +163,7 @@
           <button class="github-btn">GitHub</button>
         </div>
       </div>
-      <div class="card" id="card-1">
+      <div class="card" id="card-8">
         <div class="p-number">
           <p class="p-text">P8</p>
         </div>
@@ -178,7 +181,7 @@
       </div>
     </div>
     <div class="container-bottom">
-      <!-- contacts -->
+      <!-- Contact and social media links -->
       <div class="contact" id="social">
         <div class="contact-links">
           <p> You can find me here: </p>
@@ -193,10 +196,12 @@
           <p>Or send me an e-mail: <a href="mailto:adriana.safran@gmail.com">Send Mail</a>
           </p>
         </div>
+        <!-- Bottom picture on the end of page -->
         <div class="contact-img">
-          <img src="img/web-drawing.svg"width="500">
+          <img src="img/web-drawing.svg" width="500" alt="My web programming drawing">
         </div>
       </div>
+      <!-- Footer - end of page -->
       <footer>
         <p>Created for UDACITY 2018 <em>by Adriana</em></p>
       </footer>

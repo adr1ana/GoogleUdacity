@@ -101,7 +101,7 @@ body {
   float: left;
   position: relative;
 }
-#card-0:hover {
+#card-1:hover {
   background: url(../img/P1.png) no-repeat center;
   background-size: cover;
   color: #fff;
@@ -168,10 +168,6 @@ button {
   color:#fff;
   border: 0 solid;
   font-size: 20px;
-}
-button a {
-  text-decoration: none;
-  color:#fff;
 }
 .preview-btn {
   border-radius: 0 0 0 20px;
